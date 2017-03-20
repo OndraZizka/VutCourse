@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/jboss-qa/!svn/ver/11865/people/ozizka/VUTcourse/project/branches/practice02-jsf/src/main/webapp/WEB-INF
+END
+.faces-config.xml.jsfdia
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/jboss-qa/!svn/ver/11865/people/ozizka/VUTcourse/project/branches/practice02-jsf/src/main/webapp/WEB-INF/.faces-config.xml.jsfdia
+END
+faces-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/jboss-qa/!svn/ver/11865/people/ozizka/VUTcourse/project/branches/practice02-jsf/src/main/webapp/WEB-INF/faces-config.xml
+END
+beans.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/jboss-qa/!svn/ver/11826/people/ozizka/VUTcourse/project/branches/practice02-jsf/src/main/webapp/WEB-INF/beans.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/jboss-qa/!svn/ver/11826/people/ozizka/VUTcourse/project/branches/practice02-jsf/src/main/webapp/WEB-INF/web.xml
+END
+jboss-scanning.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/jboss-qa/!svn/ver/11826/people/ozizka/VUTcourse/project/branches/practice02-jsf/src/main/webapp/WEB-INF/jboss-scanning.xml
+END

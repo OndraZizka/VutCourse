@@ -1,0 +1,43 @@
+INSERT INTO user (id, name) VALUES ( 1, "lfryc@redhat.com")
+INSERT INTO user (id, name) VALUES ( 2, "ozizka@redhat.com")
+INSERT INTO user (id, name) VALUES ( 3, "mvecera@redhat.com")
+
+INSERT INTO auction (id, name) VALUES ( 101, "Pět švestek");
+INSERT INTO auction (id, name) VALUES ( 102, "Rohlík za odvoz")
+INSERT INTO auction (id, name) VALUES ( 103, "Osmisměrky")
+INSERT INTO auction (id, name) VALUES ( 104, "Vodováha")
+INSERT INTO auction (id, name) VALUES ( 105, "Příručka mladých svišťů")
+INSERT INTO auction (id, name) VALUES ( 106, "Leporelo")
+INSERT INTO auction (id, name) VALUES ( 107, "Neznámá hmota")
+INSERT INTO auction (id, name) VALUES ( 108, "Dětská sedačka")
+INSERT INTO auction (id, name) VALUES ( 109, "Velorex")
+INSERT INTO auction (id, name) VALUES ( 110, "Tajemný klíč")
+INSERT INTO auction (id, name) VALUES ( 111, "Zámek")
+INSERT INTO auction (id, name) VALUES ( 112, "Prkenná ohrada")
+INSERT INTO auction (id, name) VALUES ( 113, "Past na myši")
+INSERT INTO auction (id, name) VALUES ( 114, "Nabíjecí baterie")
+INSERT INTO auction (id, name) VALUES ( 115, "Plastová víčka")
+INSERT INTO auction (id, name) VALUES ( 116, "Inkoustové náplně")
+INSERT INTO auction (id, name) VALUES ( 117, "Mycí houba")
+INSERT INTO auction (id, name) VALUES ( 118, "Violoncello")
+INSERT INTO auction (id, name) VALUES ( 119, "Průvodce pokojových plodin")
+INSERT INTO auction (id, name) VALUES ( 120, "Socové kafe")
+INSERT INTO auction (id, name) VALUES ( 121, "Olejnička")
+INSERT INTO auction (id, name) VALUES ( 122, "Hadí akvárium")
+INSERT INTO auction (id, name) VALUES ( 123, "Dvojdílné trámoví")
+INSERT INTO auction (id, name) VALUES ( 124, "Psí bouda")
+INSERT INTO auction (id, name) VALUES ( 125, "Staré kolo")
+
+INSERT INTO bid (bidder_id, auction_id, amount) VALUES( 1, 101, 200 );
+INSERT INTO bid (bidder_id, auction_id, amount) VALUES( 2, 101, 300 );
+INSERT INTO bid (bidder_id, auction_id, amount) VALUES( 1, 101, 400 );
+
+INSERT INTO bid (bidder_id, auction_id, amount) VALUES( 3, 102, 100 );
+INSERT INTO bid (bidder_id, auction_id, amount) VALUES( 1, 102, 200 );
+INSERT INTO bid (bidder_id, auction_id, amount) VALUES( 2, 102, 299 );
+
+INSERT INTO bid (bidder_id, auction_id, amount) VALUES( 3, 103, 200 );
+INSERT INTO bid (bidder_id, auction_id, amount) VALUES( 1, 103, 300 );
+INSERT INTO bid (bidder_id, auction_id, amount) VALUES( 1, 103, 400 );
+INSERT INTO bid (bidder_id, auction_id, amount) VALUES( 3, 103, 450 );
+INSERT INTO bid (bidder_id, auction_id, amount) VALUES( 2, 103, 455 );

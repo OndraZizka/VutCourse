@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<body>
+<ui:composition>
+
+	<h:form>
+		<h:panelGrid columns="1">
+			<h:outputLabel value="E-mail:" />
+		
+			<h:outputText value="#{currentUser.email}" rendered="#{loginManager.logged}" />
+			<h:inputText id="emailInput" value="#{loginEmail}"
+				rendered="#{not loginManager.logged}"
+				validatorMessage="Validní e-mail je vyžadován k přihlášení">
+				<f:validateRequired />
+				<f:validateRegex pattern="^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$" />
+			</h:inputText>
+		</h:panelGrid>
+
+		<h:commandButton id="loginButton" value="Přihlásit se"
+			action="#{loginManager.login(loginEmail)}" rendered="#{not loginManager.logged}" />
+
+		<h:commandButton id="logoutButton" value="Odhlásit se"
+			action="#{loginManager.logout}" rendered="#{loginManager.logged}" />
+
+		<div><h:message for="emailInput" /></div>
+			
+	</h:form>
+
+</ui:composition>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#add.xhtml" PATH="/add.xhtml"
+  SHAPE="56,128,50,41" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#add.xhtml:0" NAME="item" PATH="/add.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{auctionManager.addAuction(newAuction)}:#detail.xhtml"
+    NAME="output" PATH="/detail.xhtml" TARGET="rules:#detail.xhtml"
+    TITLE="#{auctionManager.addAuction(newAuction)}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#detail.xhtml" PATH="/detail.xhtml"
+  SHAPE="576,88,50,41" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#detail.xhtml:0" NAME="item"
+   PATH="/detail.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{auctionManager.addBid(bidAmount)}:#detail.xhtml"
+    NAME="output" PATH="/detail.xhtml" TARGET="rules:#detail.xhtml"
+    TITLE="#{auctionManager.addBid(bidAmount)}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:" SHAPE="680,256,53,90" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::0" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{loginManager.login(loginEmail)}:#{facesContext.viewRoot.viewId}"
+    NAME="output" PATH="#{facesContext.viewRoot.viewId}"
+    TARGET="rules:#{facesContext.viewRoot.viewId}"
+    TITLE="#{loginManager.login(loginEmail)}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{loginManager.logout}:#{facesContext.viewRoot.viewId}"
+    NAME="output1" PATH="#{facesContext.viewRoot.viewId}"
+    TARGET="rules:#{facesContext.viewRoot.viewId}"
+    TITLE="#{loginManager.logout}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{auctionManager.addFavorite(currentUser, currentAuction)}:#{facesContext.viewRoot.viewId}"
+    NAME="output2" PATH="#{facesContext.viewRoot.viewId}"
+    TARGET="rules:#{facesContext.viewRoot.viewId}"
+    TITLE="#{auctionManager.addFavorite(currentUser, currentAuction)}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{auctionManager.removeFavorite(currentUser, currentAuction)}:#{facesContext.viewRoot.viewId}"
+    NAME="output3" PATH="#{facesContext.viewRoot.viewId}"
+    TARGET="rules:#{facesContext.viewRoot.viewId}"
+    TITLE="#{auctionManager.removeFavorite(currentUser, currentAuction)}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#{facesContext.viewRoot.viewId}"
+  PATH="/{facesContext.viewRoot.viewId}" SHAPE="304,280,50,25" model-entity="JSFProcessGroup"/>
+</PROCESS>

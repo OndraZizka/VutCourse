@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/jboss-qa/!svn/ver/11902/people/ozizka/VUTcourse/project/branches/practice02-model/src/main/java/org/jboss/lectures/auction
+END
+LoginManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/jboss-qa/!svn/ver/11902/people/ozizka/VUTcourse/project/branches/practice02-model/src/main/java/org/jboss/lectures/auction/LoginManager.java
+END
+UserManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/jboss-qa/!svn/ver/11902/people/ozizka/VUTcourse/project/branches/practice02-model/src/main/java/org/jboss/lectures/auction/UserManager.java
+END
+AuctionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/jboss-qa/!svn/ver/11902/people/ozizka/VUTcourse/project/branches/practice02-model/src/main/java/org/jboss/lectures/auction/AuctionManager.java
+END

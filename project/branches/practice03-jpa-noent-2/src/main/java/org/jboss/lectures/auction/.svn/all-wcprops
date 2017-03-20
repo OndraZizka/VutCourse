@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/jboss-qa/!svn/ver/12217/people/ozizka/VUTcourse/project/branches/practice03-jpa-noent-2/src/main/java/org/jboss/lectures/auction
+END
+LoginManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/repos/jboss-qa/!svn/ver/12215/people/ozizka/VUTcourse/project/branches/practice03-jpa-noent-2/src/main/java/org/jboss/lectures/auction/LoginManager.java
+END
+ApplicationScopedBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/repos/jboss-qa/!svn/ver/12215/people/ozizka/VUTcourse/project/branches/practice03-jpa-noent-2/src/main/java/org/jboss/lectures/auction/ApplicationScopedBean.java
+END
+UserManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/jboss-qa/!svn/ver/12215/people/ozizka/VUTcourse/project/branches/practice03-jpa-noent-2/src/main/java/org/jboss/lectures/auction/UserManager.java
+END
+AuctionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/repos/jboss-qa/!svn/ver/12215/people/ozizka/VUTcourse/project/branches/practice03-jpa-noent-2/src/main/java/org/jboss/lectures/auction/AuctionManager.java
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/jboss-qa/!svn/ver/12217/people/ozizka/VUTcourse/project/branches/practice03-jpa-noent-2/src/main/java/org/jboss/lectures/auction/entity
+END
+Auction.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/repos/jboss-qa/!svn/ver/12217/people/ozizka/VUTcourse/project/branches/practice03-jpa-noent-2/src/main/java/org/jboss/lectures/auction/entity/Auction.java
+END
+Bid.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/jboss-qa/!svn/ver/12217/people/ozizka/VUTcourse/project/branches/practice03-jpa-noent-2/src/main/java/org/jboss/lectures/auction/entity/Bid.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/jboss-qa/!svn/ver/12217/people/ozizka/VUTcourse/project/branches/practice03-jpa-noent-2/src/main/java/org/jboss/lectures/auction/entity/User.java
+END

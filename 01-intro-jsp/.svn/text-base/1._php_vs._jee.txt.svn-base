@@ -1,0 +1,69 @@
+=====
+O podzimu s Enterprise Javou
+
+* Seznámení s JEE technologiemi
+* JBoss protože mu nejvíc rozumíme
+* Rozsah, obsah, podoba
+* Zápočet, zkouška, kredity
+
+=====
+Porovnání PHP a JEE
+
+* PHP: script language
+* JEE: development framework
+* so we cannot compare between those two things
+
+=====
+PHP
+
++ dobrý pro rychlé vytvoření malé a funkční aplikace
++ stačí i domácí hardware
++ free webhosting
+- vede k míchání konceptů (model, pohled)
+
+=====
+JEE
+
++ výkonnost (JIT compiler) a škálovatelnost (+ failover)
++ podpora transakčního zpracování
++ podpora pokročilých technologií (messaging, clustering, bezpečnost)
++ standardizované API (JDBC, JMS)
++ napojení na legacy systémy (JCA)
+- pro malé aplikace je to kanón na vrabce
+- pomalá učicí křivka
+
+=====
+Java Server Pages
+
+* základní ekvivalent PHP
+
+A) Instalace JBossAS a JBoss Developer Studia
+   * v kontrastu s instalací Apache, PHP do Apache a pluginů do PHP
+B) Projekt v JBDS
+   1) New Dynamic Web project
+   2) index.jsp
+   3) vytvoření servletu s pomocí anotací @WebServlet, @GET a @POST
+   
+
+=====
+Scopes
+* page
+* request
+* session
+* application
+
+=====
+Ukázka způsobu zápisu v JSP
+* XML vs. JSP
+* přístup ke scopům a k datům
+
+=====
+Forward a redirect
+* výhody/nevýhody
+* použít v aplikaci
+
+=====
+Použití taglibu
+
+=====
+JDBC?

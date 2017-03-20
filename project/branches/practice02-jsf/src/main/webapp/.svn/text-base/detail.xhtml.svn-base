@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<ui:composition template="templates/home.xhtml">
+
+	<ui:define name="view">
+		<f:metadata>
+			<f:viewParam name="auctionId"
+				value="#{auctionManager.currentAuctionId}" />
+		</f:metadata>
+	</ui:define>
+
+	<ui:define name="content">
+
+		<h2>Detail aukce "#{currentAuction.name}"</h2>
+
+		<h:panelGrid columns="2">
+			<h:outputLabel value="ID:" />
+			<h:outputText value="#{currentAuction.id}" />
+
+			<h:outputLabel value="Vlastník:" />
+			<h:outputText value="#{currentAuction.owner.name}" />
+
+			<h:outputLabel value="Počáteční cena:" />
+			<h:outputText value="#{currentAuction.originalPrice}" />
+
+			<h:outputLabel value="Aktuální cena:" rendered="#{not empty currentAuction.highestBid}" />
+			<h:outputText value="#{currentAuction.highestBid.amount} (#{currentAuction.highestBid.bidder})" rendered="#{not empty currentAuction.highestBid}" />
+		</h:panelGrid>
+
+
+		<h:panelGroup rendered="#{not empty currentAuction.bids}">
+			<h3>Nabídky</h3>
+
+			<h:dataTable var="offer" value="#{currentAuction.bids}" border="1"
+				styleClass="flat">
+				<h:column>#{offer.bidder.name}</h:column>
+				<h:column>#{offer.amount}</h:column>
+			</h:dataTable>
+		</h:panelGroup>
+
+	</ui:define>
+
+</ui:composition>
+
+</html>
